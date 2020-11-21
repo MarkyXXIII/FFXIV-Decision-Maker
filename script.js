@@ -8,9 +8,9 @@ function generateRandomNumber(num) {
   }
   
   const collectiveWisdom = {
-    signInfo: ['star', 'moon', 'sun', 'comet'],
-    fortuneOutput: ['terrible luck', 'bad luck', 'ok luck', 'good luck', 'great luck'],
-    advice: ['go out and eat', 'not read this', 'play more', 'trust no one']
+    signInfo: ['Ynbulea Jutah', 'Yvraine Silverstar', 'Petrine Lethe', 'Pant Monkey'],
+    fortuneOutput: ['Level 80', 'Level 50/60/70', 'Levelling', 'Trials', 'Main Scenario', 'Guildhest', '24-man Alliance Raid', '8-man Raid'],
+    advice: ['Paladin', 'Dark Knight', 'Red Mage', 'Samurai', 'White Mage']
   }
   
   // Store the 'wisdom' in an array
@@ -23,13 +23,13 @@ function generateRandomNumber(num) {
     // use the object's properties to customize the message being added to personalWisdom  
     switch(prop) {
       case 'signInfo':
-        personalWisdom.push(`Your sign right now is a "${collectiveWisdom[prop][optionIdx]}".`)
+        personalWisdom.push(`You should party up with ${collectiveWisdom[prop][optionIdx]},`)
         break
       case 'fortuneOutput':
-        personalWisdom.push(`You are having: "${collectiveWisdom[prop][optionIdx]}".`)
+        personalWisdom.push(`and do the ${collectiveWisdom[prop][optionIdx]} roulette `)
         break
       case 'advice':
-        personalWisdom.push(`You should: "${collectiveWisdom[prop][optionIdx]}".`)
+        personalWisdom.push(`as a ${collectiveWisdom[prop][optionIdx]}.`)
         break
       default:
         personalWisdom.push('There is not enough info.')
