@@ -7,43 +7,43 @@ function generateRandomNumber(num) {
     return Math.floor(Math.random() * num)
   }
   
-  const collectiveWisdom = {
-    signInfo: ['Ynbulea Jutah', 'Yvraine Silverstar', 'Petrine Lethe', 'Pant Monkey'],
-    fortuneOutput: ['Level 80', 'Level 50/60/70', 'Levelling', 'Trials', 'Main Scenario', 'Guildhest', '24-man Alliance Raid', '8-man Raid'],
-    advice: ['Paladin', 'Dark Knight', 'Red Mage', 'Samurai', 'White Mage']
+  const collectiveDecision = {
+    charName: ['Character A', 'Character B', 'Character C', 'Character D'],
+    activity: ['Activity 1', 'Activity 2', 'Activity 3', 'Activity 4', 'Activity 5', 'Activity 6', 'Activity 7', 'Activity 8'],
+    role: ['Role I', 'Role II', 'Role III', 'Role IV',]
   }
   
-  // Store the 'wisdom' in an array
-  let personalWisdom = []
+  // Store the 'decision' in an array
+  let personalDecision = []
   
   // Iterate over the object
-  for(let prop in collectiveWisdom) {
-    let optionIdx = generateRandomNumber(collectiveWisdom[prop].length)
+  for(let prop in collectiveDecision) {
+    let optionIdx = generateRandomNumber(collectiveDecision[prop].length)
   
-    // use the object's properties to customize the message being added to personalWisdom  
+    // use the object's properties to customize the message being added to personalDecision  
     switch(prop) {
-      case 'signInfo':
-        personalWisdom.push(`You should party up with ${collectiveWisdom[prop][optionIdx]},`)
+      case 'charName':
+        personalDecision.push(`You should team up with ${collectiveDecision[prop][optionIdx]},`)
         break
-      case 'fortuneOutput':
-        personalWisdom.push(`and do the ${collectiveWisdom[prop][optionIdx]} roulette `)
+      case 'activity':
+        personalDecision.push(`and complete ${collectiveDecision[prop][optionIdx]} `)
         break
-      case 'advice':
-        personalWisdom.push(`as a ${collectiveWisdom[prop][optionIdx]}.`)
+      case 'role':
+        personalDecision.push(`as ${collectiveDecision[prop][optionIdx]}.`)
         break
       default:
-        personalWisdom.push('There is not enough info.')
+        personalDecision.push('There is not enough info.')
     }
   }
   
-  function formatWisdom(wisdom) {
-    const formatted = personalWisdom.join('\n')
+  function formatDecision(wisdom) {
+    const formatted = personalDecision.join('\n')
     return formatted;
     //console.log(formatted);
   }
-    //formatWisdom(personalWisdom)
+    //formatDecision(personalDecision)
 
 decisionButton.onclick = function () {
-  document.getElementById("decisionOutput").innerHTML=formatWisdom(personalWisdom);
+  document.getElementById("decisionOutput").innerHTML=formatDecision(personalDecision);
   return false;
 }
