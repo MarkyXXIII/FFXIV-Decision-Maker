@@ -12,17 +12,14 @@ It will take one activity, one other player, and one in-game role and return a s
 
 ## Screenshots
 
-![Mark Williams Homepage](https://github.com/MarkyXXIII/portfolio_2.0/blob/main/screenshots/index.jpg)
-![Mark Williams About Me](https://github.com/MarkyXXIII/portfolio_2.0/blob/main/screenshots/about.jpg)
-![Mark Williams Contact](https://github.com/MarkyXXIII/portfolio_2.0/blob/main/screenshots/contact.jpg)
+![FFXIV Decision Maker](https://github.com/MarkyXXIII/FFXIV-Decision-Maker/blob/main/screenshots/before.jpg)
+![FFXIV Decision Result](https://github.com/MarkyXXIII/FFXIV-Decision-Maker/blob/main/screenshots/after.jpg)
 
 ## Technologies
 Project is created with:
 * HTML5
 * CSS3
 * JavaScript
-* Bootstrap
-* jQuery
 
 ## Project Status
 Complete.
