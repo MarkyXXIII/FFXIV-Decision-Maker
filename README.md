@@ -12,8 +12,8 @@ It will take one activity, one other player, and one in-game role and return a s
 
 ## Screenshots
 
-![FFXIV Decision Maker](https://github.com/MarkyXXIII/FFXIV-Decision-Maker/blob/main/screenshots/before.jpg)
-![FFXIV Decision Result](https://github.com/MarkyXXIII/FFXIV-Decision-Maker/blob/main/screenshots/after.jpg)
+![FFXIV Decision Maker](https://github.com/MarkyXXIII/FFXIV-Decision-Maker/blob/master/screenshots/before.jpg)
+![FFXIV Decision Result](https://github.com/MarkyXXIII/FFXIV-Decision-Maker/blob/master/screenshots/after.jpg)
 
 ## Technologies
 Project is created with:
